@@ -5,7 +5,6 @@ void main() => runApp(new MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return MaterialApp(title: 'myapp', home: new _Home());
   }
 }
@@ -13,7 +12,6 @@ class MyApp extends StatelessWidget {
 class _Home extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return new _HomeState();
   }
 }
@@ -22,9 +20,9 @@ class _HomeState extends State {
   // 当前页面
   int page = 0;
   PageController pageController;
+  
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return new Scaffold(
         body: PageView(
           children: <Widget>[
